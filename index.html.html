@@ -7,38 +7,40 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Prayer Battle">
-<meta name="theme-color" content="#0d1024">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230d1024'/%3E%3Ctext x='50' y='66' font-size='55' text-anchor='middle'%3E%E2%9A%94%EF%B8%8F%3C/text%3E%3C/svg%3E">
-<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230d1024'/%3E%3Ctext x='50' y='66' font-size='55' text-anchor='middle'%3E%E2%9A%94%EF%B8%8F%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#ffe0ef">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23ffd6ea'/%3E%3Cstop offset='100%25' stop-color='%23e3d1ff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Ctext x='50' y='68' font-size='56' text-anchor='middle'%3E%F0%9F%A6%8B%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23ffd6ea'/%3E%3Cstop offset='100%25' stop-color='%23e3d1ff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' fill='url(%23g)'/%3E%3Ctext x='50' y='68' font-size='56' text-anchor='middle'%3E%F0%9F%A6%8B%3C/text%3E%3C/svg%3E">
 <title>Prayer Battle</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg-void: #0d1024;
-    --bg-panel: #161a35;
-    --bg-panel-raised: #1e2344;
-    --line: rgba(255,255,255,0.08);
-    --gold: #e8b44c;
-    --gold-dim: #7a6329;
-    --teal: #3fd0c9;
-    --coral: #ff6f6f;
-    --text-main: #f2efe4;
-    --text-dim: #9a9fc4;
-    --glow-gold: 0 0 24px rgba(232,180,76,0.35);
-    --glow-teal: 0 0 24px rgba(63,208,201,0.35);
-    --glow-coral: 0 0 24px rgba(255,111,111,0.35);
-    --font-display: 'Rajdhani', sans-serif;
-    --font-body: 'Manrope', sans-serif;
+    --bg-void: #fff0f7;
+    --bg-panel: #ffffff;
+    --bg-panel-raised: #ffe6f2;
+    --line: rgba(214,110,166,0.18);
+    --gold: #ff6fa8;
+    --gold-dim: #e0a4c4;
+    --teal: #b48cf0;
+    --coral: #ff8fab;
+    --text-main: #5b3358;
+    --text-dim: #93688f;
+    --glow-gold: 0 0 24px rgba(255,111,168,0.28);
+    --glow-teal: 0 0 24px rgba(180,140,240,0.30);
+    --glow-coral: 0 0 24px rgba(255,143,171,0.30);
+    --font-display: 'Fredoka', sans-serif;
+    --font-body: 'Nunito', sans-serif;
   }
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
   body{
     font-family: var(--font-body);
+    font-weight: 500;
     background:
-      radial-gradient(ellipse 800px 400px at 50% -10%, rgba(232,180,76,0.08), transparent),
-      radial-gradient(ellipse 600px 300px at 90% 100%, rgba(63,208,201,0.06), transparent),
-      var(--bg-void);
+      radial-gradient(ellipse 700px 400px at 15% -5%, rgba(255,182,217,0.55), transparent),
+      radial-gradient(ellipse 700px 500px at 100% 10%, rgba(200,175,250,0.45), transparent),
+      radial-gradient(ellipse 600px 400px at 30% 100%, rgba(255,214,225,0.6), transparent),
+      linear-gradient(180deg, #fff5fb, #fbeeff 60%, #fff0f7);
     color: var(--text-main);
     min-height: 100vh;
     -webkit-font-smoothing: antialiased;
@@ -52,19 +54,20 @@
   }
   .brand-eyebrow{
     font-family:var(--font-display);
-    letter-spacing:0.35em;
+    letter-spacing:0.3em;
     font-size:11px;
-    color:var(--gold-dim);
+    color:#c25a94;
     text-transform:uppercase;
     margin-bottom:4px;
+    font-weight:600;
   }
   .brand h1{
     font-family:var(--font-display);
-    font-weight:700;
-    font-size:32px;
-    letter-spacing:0.02em;
+    font-weight:800;
+    font-size:34px;
+    letter-spacing:0.01em;
     margin:0;
-    background:linear-gradient(180deg,#fff, var(--gold) 140%);
+    background:linear-gradient(135deg, #ff6fa8, #b48cf0 60%, #ff8fab);
     -webkit-background-clip:text;
     background-clip:text;
     color:transparent;
@@ -84,9 +87,9 @@
   }
   .identity-bar button{
     background:var(--bg-panel-raised);
-    border:1px solid var(--line);
+    border:2px solid var(--line);
     color:var(--text-main);
-    padding:5px 12px;
+    padding:5px 14px;
     border-radius:20px;
     font-family:var(--font-display);
     font-weight:600;
@@ -95,24 +98,26 @@
   }
   .identity-bar button.active{
     border-color:var(--gold);
-    color:var(--gold);
+    color:#d6489a;
+    background: linear-gradient(135deg, #ffe0ef, #f0e2ff);
     box-shadow: 0 0 0 1px var(--gold) inset;
   }
 
   /* ---------- VS / Tug of war ---------- */
   .arena{
     background: var(--bg-panel);
-    border:1px solid var(--line);
-    border-radius:18px;
-    padding:18px 16px 16px;
+    border:2px solid var(--line);
+    border-radius:26px;
+    padding:20px 16px 16px;
     margin-bottom:16px;
     position:relative;
     overflow:hidden;
+    box-shadow: 0 10px 30px rgba(214,110,166,0.12);
   }
   .arena::before{
     content:'';
     position:absolute; inset:0;
-    background: linear-gradient(120deg, rgba(232,180,76,0.06), transparent 40%);
+    background: linear-gradient(120deg, rgba(255,143,171,0.08), transparent 40%);
     pointer-events:none;
   }
   .vs-row{
@@ -127,11 +132,11 @@
     text-align:center;
   }
   .fighter .avatar{
-    width:52px;height:52px;border-radius:50%;
+    width:56px;height:56px;border-radius:50%;
     display:flex;align-items:center;justify-content:center;
-    font-size:24px;
+    font-size:26px;
     margin:0 auto 6px;
-    background: var(--bg-panel-raised);
+    background: linear-gradient(160deg, #ffe6f2, #f3e6ff);
     border:2px solid var(--line);
   }
   .fighter.leading .avatar{
@@ -184,7 +189,7 @@
     transition: left 0.5s ease;
   }
   .rope-flag::after{
-    content:'🚩';
+    content:'💖';
     position:absolute; top:-14px; left:-8px;
     font-size:16px;
   }
@@ -202,9 +207,9 @@
     gap:6px;
     margin-bottom:14px;
     background:var(--bg-panel);
-    border-radius:14px;
-    padding:4px;
-    border:1px solid var(--line);
+    border-radius:20px;
+    padding:5px;
+    border:2px solid var(--line);
   }
   .tabs button{
     flex:1;
@@ -220,18 +225,20 @@
     letter-spacing:0.03em;
   }
   .tabs button.active{
-    background: var(--bg-panel-raised);
-    color:var(--gold);
+    background: linear-gradient(135deg, #ffe0ef, #f0e2ff);
+    color:#d6489a;
     box-shadow: 0 0 0 1px var(--line) inset;
+    border-radius:16px;
   }
 
   /* ---------- Panels ---------- */
   .panel{
     background: var(--bg-panel);
-    border:1px solid var(--line);
-    border-radius:16px;
+    border:2px solid var(--line);
+    border-radius:22px;
     padding:16px;
     margin-bottom:14px;
+    box-shadow: 0 8px 24px rgba(214,110,166,0.08);
   }
   .panel-title{
     font-family:var(--font-display);
@@ -258,9 +265,9 @@
   }
   .prayer-cell{
     aspect-ratio:1;
-    border-radius:12px;
+    border-radius:18px;
     background:var(--bg-panel-raised);
-    border:1px solid var(--line);
+    border:2px solid var(--line);
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -329,18 +336,18 @@
     flex:1;
     font-family:var(--font-display);
     font-weight:700;
-    font-size:13px;
-    letter-spacing:0.03em;
-    padding:12px;
-    border-radius:12px;
-    border:1px solid var(--line);
+    font-size:14px;
+    letter-spacing:0.02em;
+    padding:13px;
+    border-radius:18px;
+    border:2px solid var(--line);
     background:var(--bg-panel-raised);
     color:var(--text-main);
     cursor:pointer;
   }
   .btn-primary{
-    background: linear-gradient(160deg, var(--gold), #c68f2e);
-    color:#1a1200;
+    background: linear-gradient(135deg, #ff8fc4, #b48cf0);
+    color:#fff;
     border:none;
     box-shadow: var(--glow-gold);
   }
@@ -372,9 +379,9 @@
     z-index:50;
   }
   .overlay-card{
-    background: var(--bg-panel);
-    border:1px solid var(--gold);
-    border-radius:20px;
+    background: linear-gradient(160deg, #ffffff, #fff0f7);
+    border:2px solid var(--gold);
+    border-radius:28px;
     padding:28px 22px;
     text-align:center;
     max-width:360px;
@@ -545,9 +552,10 @@ function renderIdentityPicker(){
   return `
     ${renderBrand()}
     <div class="panel" style="text-align:center;">
-      <div class="panel-title" style="justify-content:center;">Who's logging in?</div>
+      <div class="panel-title" style="justify-content:center;">🎀 Who's logging in? 🎀</div>
       <div style="display:flex; flex-direction:column; gap:10px; margin-top:8px;">
-        ${PLAYERS.map(p => `<button class="btn btn-primary" data-me="${p}">I'm ${p}</button>`).join('')}
+        <button class="btn btn-primary" data-me="Turna">🦋 I'm Turna</button>
+        <button class="btn btn-primary" data-me="Abonti">🧸 I'm Abonti</button>
       </div>
     </div>
   `;
@@ -556,7 +564,7 @@ function renderIdentityPicker(){
 function renderBrand(){
   return `
     <div class="brand">
-      <div class="brand-eyebrow">⚔ Daily Duel</div>
+      <div class="brand-eyebrow">✨ Daily Duel ✨</div>
       <h1>Prayer Battle</h1>
     </div>
   `;
@@ -580,17 +588,17 @@ function renderArena(scoreT, scoreA, pctT){
     <div class="arena">
       <div class="vs-row">
         <div class="fighter ${leaderIsT?'leading':''}">
-          <div class="avatar">🥋</div>
-          <div class="fighter-name">Turna</div>
+          <div class="avatar">🦋</div>
+          <div class="fighter-name">Turna 🎀</div>
           <div class="fighter-score">${scoreT}</div>
-          <div class="fighter-streak">🔥 ${streakT}d streak</div>
+          <div class="fighter-streak">✨ ${streakT}d streak</div>
         </div>
-        <div class="vs-badge">VS</div>
+        <div class="vs-badge">💗</div>
         <div class="fighter ${leaderIsA?'leading':''}">
-          <div class="avatar">🥊</div>
-          <div class="fighter-name">Abonti</div>
+          <div class="avatar">🧸</div>
+          <div class="fighter-name">Abonti 🌸</div>
           <div class="fighter-score">${scoreA}</div>
-          <div class="fighter-streak">🔥 ${streakA}d streak</div>
+          <div class="fighter-streak">✨ ${streakA}d streak</div>
         </div>
       </div>
       <div class="rope-track">
@@ -664,7 +672,7 @@ function renderBoard(scoreT, scoreA){
       <div class="panel-title">Round Standings <span class="date">since ${state.roundStart}</span></div>
       ${rows.map((r,i)=>`
         <div class="lb-row ${i===0?'first':''}">
-          <div class="lb-rank">${i===0?'👑':'🥈'}</div>
+          <div class="lb-rank">${i===0?'👑':'💫'}</div>
           <div class="lb-info">
             <div class="lb-name">${r.name}</div>
             <div class="lb-meta">🔥 ${r.streak} day streak</div>
